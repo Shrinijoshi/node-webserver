@@ -58,6 +58,13 @@ app.get('/about', (req,res)=>{
     });
 });
 
+app.get('/projects',(req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'Projects Page',
+      
+    });
+});
+
 app.get('/bad',(req,res)=>{
     res.send({
         message: 'bad request to fetch the details',
